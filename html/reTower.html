@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Renaissance Tower</title>
+		<link rel="stylesheet" type="text/css" href="../css/renTower.css">
+		<script src = "https://maps.googleapis.com/maps/api/js"></script>
+	<head>
+	<body>
+		<div class="bg">
+			<div class="wrapper-container">
+				<div class="container top">
+					<img class="top-tower-img" src="../img/apartments.png" alt="A Icon of Tower">
+					<h1 id="building-name"></h1>
+					<p id="building-address">1201 Elm Stree, Dallas, TX 75251</p>
+				</div>
+				<div class="container location">
+					<img class="location-image" src="../img/renaissance-tower.jpg" alt="Renaissance Tower">					
+    				<div id = "googleMap" style = "float: right;width:47%; height:400px;"></div>
+				</div>
+				<div class="container table">
+					<table>
+						<caption>PROPERTY DETAILS</caption>
+						<tr>
+							<td class="colored-column">Property type:</td>
+							<td id="property-type"></td>
+							<td class="colored-column">Website:</td>
+							<td id="website"></td>
+						</tr>
+						<tr>
+							<td class="colored-column">Total Building Area:</td>
+							<td id="total-building-area"></td>
+							<td class="colored-column">Property class:</td>
+							<td id="property-class"></td>
+						</tr>
+						<tr>
+							<td class="colored-column">Tenancy:</td>
+							<td id="tenancy"></td>
+							<td class="colored-column">Year built:</td>
+							<td id="year-built"></td>
+						</tr>
+						<tr>
+							<td class="colored-column">No. of Tenant:</td>
+							<td id="no-of-tenant"></td>
+							<td class="colored-column">Floors:</td>
+							<td id="floors"></td>
+						</tr>
+					</table>
+				</div>
+				<div class="container description">
+					<label>						
+						<strong>Description: </strong><div id="description" style="display: inline;"></div>
+					</label>
+				</div>
+				<div class="container-availabilities">
+					<div class="table-wrapper">
+						<img class="calendar-icon" src="../img/calendar.png">
+						<h1>AVAILABILITIES</h1>
+						<label id="number-of-records"></label>
+						<table id="table-of-availabilities" class="availabilities">
+							<tr>
+								<th>Unit name/Number</th>
+								<th>Record type</th>
+								<th>Available Area</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../json/data.json"></script>		
+		<script type="text/javascript" src="../js/renTower.js"></script>
+		<script type="text/javascript" src="../js/googleMaps.js"></script>
+	<body>
+</html>
